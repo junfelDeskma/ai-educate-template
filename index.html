@@ -14,7 +14,7 @@
 	<body>
 		<header id="navbar-container">
 			<div>
-				<nav class="navbar  navbar-expand-lg  navbar-dark sticky-top primary-background-color navbar-full">
+				<nav class="navbar  navbar-expand-lg  navbar-dark sticky-top primary-background-color navbar-full" id="test-sticky">
 					<div class="container-fluid">
 						<a class="navbar-brand" href="#"> <!-- <img src="assets/images/teachericon.png" width="40px" alt=""> --> Lilabot</a>
 						<button class="navbar-toggler float-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,7 +41,7 @@
 								<form class="form-inline">
 									<div class="form-group mb-2">
 										<label for="staticEmail2" class="sr-only">Email</label>
-										<input type="text" class="form-control form-control-sm" id="login-email" value="" placeholder="Email addres or Username">
+										<input type="text" class="form-control form-control-sm" id="login-email" value="" placeholder="Username">
 									</div>
 									<div class="form-group mx-sm-3 mb-2">
 										<label for="inputPassword2" class="sr-only">Password</label>
@@ -81,7 +81,7 @@
 		</header>
 
 		<section id="main-hero">
-			<div class="row align-items-center" style="height: 100%;background: rgba(0, 0, 0, 0.1411764705882353);" id="particles-js">
+			<div class="row align-items-center" style="height: 100%;background: rgba(0, 0, 0, 0.1411764705882353);" >
 				
 				<div class="col-md-12">
 					<div class="row justify-content-around">
@@ -104,7 +104,7 @@
 							</ul>
 						
 						</div>
-						<div class="col-md-8 col-xl-4 col-xs-4 align-self-stretch align-items-center">
+						<div class="col-12 col-sm-12 col-md-8 col-lg-4 col-xl-3 align-self-stretch align-items-center">
 							<div id="" class="p-5 form-background">
 								<form>
 									<div class="form-group">
@@ -202,14 +202,14 @@
 							</div>
 							<div class="col-12 col-sm-12 col-md-12 col-lg-8 col-xl-8 my-5">
 								<ul class="list-unstyled">
-									<li class="media d-block d-sm-block d-md-flex d-lg-flex d-xl-flex text-center text-sm-center">
-										<img src="assets/images/artificial-intelligence.svg" alt="" class="m-4 media-img ">
+									<li class="media d-block d-sm-block d-md-flex d-lg-flex d-xl-flex text-center text-sm-center align-items-center mb-4">
+										<img src="assets/images/artificial-intelligence.svg" alt="" class="mr-4 media-img mb-4 mb-sm-4 mb-md-0 mb-lg-0 mb-xl-0">
 										<div class="media-body">
 											<p class="text-center text-sm-center text-md-left text-lg-left text-xl-left">Lila is an intelligent tutor powered by state-of-the-art Artificial Intelligence. Years of natural language processing research combined with the recent resurgence of Deep Learning have finally made it possible to make a system capable of tutoring students in many different of subjects! </p>
 										</div>
 									</li>
-									<li class="media d-block d-sm-block d-md-flex d-lg-flex d-xl-flex text-center text-sm-center">
-										<img src="assets/images/research.svg" alt="" class="m-4 media-img">
+									<li class="media d-block d-sm-block d-md-flex d-lg-flex d-xl-flex text-center text-sm-center align-items-center mb-4">
+										<img src="assets/images/research.svg" alt="" class="mr-4 media-img mb-4 mb-sm-4 mb-md-0 mb-lg-0 mb-xl-0">
 										<div class="media-body">
 											<p class="text-center text-sm-center text-md-left text-lg-left text-xl-left"> A growing amount of scientific research is continues to demonstrate that one-on-one, personalized tutoring increases understanding in a way reading and watching video lectures simply cannot. Lila is part of a larger effort to bring interactive, personalized tutoring to everyone; democratizing learning and allowing the education system to meet the growing demands of the modern world.</p>
 										</div>
@@ -383,16 +383,25 @@
 							10571091 CANADA INC. (AI-Educate )<br />
 							E-mail: <a href="mailto:team@ai-educate.com">team@ai-educate.com</a>
 						</address>
+						<p class="text-center text-light"> © 2018 - All Rights Reserved. &nbsp;<a href="#"> Terms and Conditions</a> | <a href="#">Privacy Policy </a> </p>
 						
-							
-							<p class="text-center text-light"> © 2018 - All Rights Reserved. &nbsp;<a href="#"> Terms and Conditions</a> | <a href="#">Privacy Policy </a> </p>
-						
-					
 					</div>
 				</div>
 			</div>
 		</footer>
 		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 		<script src="assets/js/bootstrap.min.js"></script>
+		<!-- <script src="assets/js/lib/jquery.waypoints.min.js"></script>
+		<script src="assets/js/lib/shortcuts/inview.min.js"></script> -->
+		<script>
+			/*$( document ).ready( function(){
+				var inview = new Waypoint.Inview({
+					element: $('section'),
+					entered: function(direction) {
+						console.log( direction );
+					}
+				});
+			});*/
+		</script>
 	</body>
 </html>
