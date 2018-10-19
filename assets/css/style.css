@@ -14,6 +14,7 @@ html, body{
 	background-color: #00687f !important;
 }
 #navbar-container{
+
 }
 #navbar-container .navbar{
 	padding: 1rem;
@@ -26,10 +27,7 @@ section#main-hero{
 	padding-right: 15px;
 	background-position: center;
 }
-section.hero{
-	height: 100vh;
-	border: solid thin;
-}
+
 .form-background{
 	background: rgba(0, 0, 0, 0.5);
 }
@@ -165,6 +163,7 @@ footer a:hover{
 	}
 	section#main-hero{
 		height: auto;
+		margin-top: 72px;
 	}
 	section#main-hero .row{
 		padding: 20px;
@@ -195,6 +194,7 @@ footer a:hover{
 	}
 	section#main-hero{
 		height: auto;
+		margin-top: 72px;
 	}
 	section#main-hero .row{
 		padding: 20px;
@@ -225,6 +225,7 @@ footer a:hover{
 	}
 	section#main-hero{
 		height: calc(100vh - 112px);
+		margin-top: 112px;
 	}
 }
 
@@ -252,6 +253,7 @@ footer a:hover{
 	}
 	section#main-hero{
 		height: calc(100vh - 112px);
+		margin-top: 112px;
 	}
 }
 
@@ -265,6 +267,7 @@ footer a:hover{
 	}
 	section#main-hero{
 		height: 100vh;
+		margin-top: 72px;
 	}
 }
 
@@ -272,6 +275,7 @@ footer a:hover{
 @media (max-width: 767.98px) {
 	section#main-hero{
 		height: auto;
+		margin-top: 72px;
 	}
 	section#main-hero .row{
 		padding-top: 20px;
@@ -301,5 +305,8 @@ footer a:hover{
 	section#main-hero .row{
 		padding-top: 20px;
 		padding-bottom: 20px;
+	}
+	.navbar-nav .main-links{
+		font-size: .9rem;
 	}
 }
