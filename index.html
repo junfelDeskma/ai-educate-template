@@ -127,11 +127,22 @@
 									<div class="form-group">
 										<input type="text" class="form-control" id="username" placeholder="Username">
 									</div>
-									<div class="form-group">
+									<div class="form-group" id="email-container">
 										<input type="email" class="form-control" id="email" placeholder="Email">
 									</div>
 									<div class="form-group">
 										<input type="password" class="form-control" id="password" placeholder="Password">
+									</div>
+									<div class="form-group">
+										<select name="course" id="input-course" class="form-control">
+											<option value="COMP551-OCT">COMP551-OCT</option>
+											<option value="COMP652">COMP652</option>
+											<option value="COMP551">COMP551</option>
+											<option value="8062917A">8062917A</option>
+											<option value="IFT3395">IFT3395</option>
+											<option value="IFT3395">IFT3395</option>
+											<option value="default">Default Course</option>
+										</select>
 									</div>
 									<button type="submit" class="btn btn-primary btn-block">Sign Up</button>
 								</form>
@@ -160,7 +171,11 @@
 					<div class="col-md-10 offset-md-1 py-5">
 						<h1 class="text-center font-weight-bold text-light"> Meet Lila </h1>
 						<div class="row no-gutter h-100">
-							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex align-self-stretch align-self-end" id="teacher"></div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 d-flex align-self-stretch align-self-end" >
+								<div id="teacher" class="w-90">
+									
+								</div>
+							</div>
 							<div class="col-12 col-sm-12 col-md-12 col-lg-9 col-xl-9 align-self-start align-self-sm-start align-self-md-center align-self-lg-center align-self-xl-center">
 								<div id="carouselContent" class="carousel slide" data-ride="carousel">
 									<div class="carousel-inner meet-lila-carousel-item" role="listbox">
@@ -343,6 +358,27 @@
 								</div>
 							</div>
 						</div>
+						<h1 class="text-center font-weight-bold mb-3">Our Team in the Philippines</h1>
+						<div class="row my-5 justify-content-md-center"">
+							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
+								<img src="assets/images/ole-michael.jpeg" alt="" class="img-thumbnail team-images">
+								<div class="my-3">
+									<h5 class="text-center font-weight-bold">Ole Michael Waldén Oldhøj</h5>
+									<h6>
+										Chief ??????? Officer
+									</h6>
+								</div>
+							</div>
+							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
+								<img src="assets/images/asd" alt="" class="img-thumbnail team-images">
+								<div class="my-3">
+									<h5 class="text-center font-weight-bold">Junfel Vincent Romano</h5>
+									<h6>
+										UI/UX Designer
+									</h6>
+								</div>
+							</div>
+						</div>
 						<h1 class="text-center font-weight-bold mb-3"> Scientific Advisory Board</h1>
 						<div class="row my-5">
 							<div class="col-12 col-sm-12 col-md-12 col-lg-3 col-xl-3 text-center">
@@ -417,6 +453,7 @@
 					navHeight = $('#nav-wrapper').innerHeight() - 1;
 				});
 				scrollToContent();
+				toggleEmailfield();
 			});
 			
 
@@ -427,6 +464,18 @@
 					$('html, body').animate({
 						scrollTop: ( $( scrollToElementID ).offset().top - navHeight )
 					},300);
+				});
+			}
+
+			function toggleEmailfield(){
+				$('body').on('change', '#input-course', function(){
+					var value = $( this ).val();
+					if( value == 'default' ){
+						console.log('asdf');
+						$('#email-container').fadeIn('slow');
+					}else{
+						$('#email-container').fadeOut('slow');
+					}
 				});
 			}
 

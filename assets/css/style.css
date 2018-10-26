@@ -35,6 +35,9 @@ section#main-hero{
 .form-control, .btn{
 	border-radius: .1rem;
 }
+#email-container{
+	display: none;
+}
 .container-divider{
 	position: absolute;
 	left: 0;
@@ -120,7 +123,8 @@ section#main-hero{
 	background-repeat: no-repeat;
 	background-position: bottom;
 	background-size: contain;
-	min-height: 200px;
+	min-height: 100px;
+	width: 100%;
 }
 #meet-lila{
 	background: url('../images/bb.jpg');
@@ -335,6 +339,9 @@ footer a:hover{
 		flex: 0 0 100%;
 		max-width: 100%;
 	}
+	.w-90{
+		width: 90% !important;
+	}
 }
 
 /* Extra small devices (portrait phones, less than 576px) */
@@ -395,7 +402,7 @@ and (orientation : landscape) {
 		padding-bottom: 20px;
 	}
 	#meet-lila{
-		height: 50vh !important;
+		height: auto !important;
 	}
 
 }
